@@ -7,7 +7,7 @@ const AboutMe = () => {
         <div className="py-6">
           <h2 className="font-semibold mb-1">Hello! I'm Syed Areeb</h2>
           <p className="text-base leading-6 ">
-            Web developer from Sukkur, Pakistan. I have rich experience in web
+            Software Engineer from Sukkur, Pakistan. I have rich experience in web
             site design and building, also I am good at machine learning. I love to
             talk with you about our unique.
           </p>
