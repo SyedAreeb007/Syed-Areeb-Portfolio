@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import emailjs from "emailjs-com";
 import { FiSend } from "react-icons/fi";
 import Title from "../home/Title";
 
@@ -8,19 +8,16 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [messages, setMessages] = useState("");
 
-  // ================= Error Messages Start here =================
   const [errClientName, setErrClientName] = useState(false);
   const [errEmail, setErrEmail] = useState(false);
   const [errMessages, setErrMessage] = useState(false);
-  // ================= Error Messages End here ===================
-  const [seuccessMsg, setSuccessMsg] = useState("");
-  // ================= Email Validation Start here ===============
+  const [successMsg, setSuccessMsg] = useState("");
+
   const EmailValidation = (email) => {
     return String(email)
       .toLowerCase()
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
-  // ================= Email Validation End here =================
 
   const handleName = (e) => {
     setClientName(e.target.value);
@@ -51,19 +48,31 @@ const Contact = () => {
       setErrMessage(true);
     }
     if (clientName && email && EmailValidation(email) && messages) {
-      axios.post("https://getform.io/f/e18ee560-5133-4cfe-9a48-eddb6f012a9f", {
-        name: clientName,
-        email: email,
-        message: messages,
-      });
-      setSuccessMsg(
-        `Hello dear ${clientName}, Your messages has been sent successfully. Thank you for your time!`
+      emailjs.send(
+        "service_pq71kcf", // Your service ID
+        "template_rqt21lk", // Your template ID
+        {
+          to_name: "Syed Areeb",
+          from_name: clientName,
+          message: messages,
+        },
+        "7PHfnmXIUbpPmyse-" // Your User ID (Public Key)
+      ).then(
+        (response) => {
+          setSuccessMsg(
+            `Hello dear ${clientName}, Your messages have been sent successfully. Thank you for your time!`
+          );
+          setClientName("");
+          setEmail("");
+          setMessages("");
+        },
+        (error) => {
+          console.error("FAILED...", error);
+        }
       );
-      setClientName("");
-      setEmail("");
-      setMessages("");
     }
   };
+
   return (
     <div className="w-full">
       <Title title="Get" subTitle="in Touch" />
@@ -99,16 +108,15 @@ const Contact = () => {
       </div>
       <div className="w-full mt-10">
         <Title title="Send" subTitle="Messages" />
-        {seuccessMsg ? (
+        {successMsg ? (
           <p className="text-center text-base font-titleFont p-20 text-designColor">
-            {seuccessMsg}
+            {successMsg}
           </p>
         ) : (
           <form
             id="form"
-            action="https://getform.io/f/e18ee560-5133-4cfe-9a48-eddb6f012a9f"
-            method="POST"
             className="p-6 flex flex-col gap-6"
+            onSubmit={handleSend}
           >
             <div className="w-full flex flex-col lgl:flex-row gap-4 lgl:gap-10 justify-between">
               <input
@@ -119,7 +127,6 @@ const Contact = () => {
                     ? "border-red-600 focus-visible:border-red-600"
                     : "border-zinc-600 focus-visible:border-designColor"
                 } w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 outline-none duration-300`}
-                // className="w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 border-zinc-600 focus-visible:border-designColor outline-none duration-300"
                 type="text"
                 placeholder="Full Name"
               />
@@ -147,7 +154,7 @@ const Contact = () => {
               rows="4"
             ></textarea>
             <button
-              onClick={handleSend}
+              type="submit"
               className="text-base w-44 flex items-center gap-1 text-gray-200 hover:text-designColor duration-200"
             >
               Send Message{" "}

@@ -6,7 +6,6 @@ const Sidenav = () => {
     <div className="px-7 py-4">
       <SidenavTitle title="M" subTitle="enu" />
       <ul>
-        <li className="sidenavLi">Blog Page</li>
         <li className="sidenavLi">Portfolio Page</li>
       </ul>
       <SidenavTitle title="P" subTitle="rojects" />
