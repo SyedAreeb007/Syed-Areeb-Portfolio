@@ -19,6 +19,16 @@ const MyServices = () => {
         subTitle="Proficient web designer skilled in Figma, creating visually compelling and user-friendly digital experiences."
       />
       <ServicesCard
+        icons={<BiCodeAlt />}
+        title="Mobile App Development"
+        subTitle="Skilled mobile app developer specializing in Kotlin and SQLite DB for seamless and dynamic user experiences."
+      />
+      <ServicesCard
+        icons={<SiAntdesign />}
+        title="Mobile App Design"
+        subTitle="Proficient mobile app designer skilled in Figma, creating visually compelling and user-friendly digital experiences."
+      />
+      <ServicesCard
         icons={<AiTwotoneAppstore />}
         title="Machine Learning"
         subTitle="Experienced in machine learning, leveraging data to build intelligent, predictive models for diverse applications."
