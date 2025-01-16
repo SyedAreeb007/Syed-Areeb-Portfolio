@@ -8,7 +8,7 @@ const AboutMe = () => {
           <h2 className="font-semibold mb-1">Hello! I'm Syed Areeb</h2>
           <p className="text-base leading-6 ">
             Software Engineer from Sukkur, Pakistan. I have rich experience in web
-            site design and building, also I am good at machine learning. I love to
+            and mobile application designing and building, also I am good at machine learning. I love to
             talk with you about our unique.
           </p>
         </div>
@@ -17,7 +17,7 @@ const AboutMe = () => {
         <ul className="flex flex-col gap-1">
           <li className="aboutRightLi">
             <span className="aboutRightLiSpan">Age:</span>
-            22
+            23
           </li>
           <li className="aboutRightLi">
             <span className="aboutRightLiSpan">Residence:</span>
