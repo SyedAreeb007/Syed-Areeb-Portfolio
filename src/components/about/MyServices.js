@@ -19,24 +19,24 @@ const MyServices = () => {
         subTitle="Proficient web designer skilled in Figma, creating visually compelling and user-friendly digital experiences."
       />
       <ServicesCard
-        icons={<BiCodeAlt />}
+        icons={<AiTwotoneAppstore />}
         title="Mobile App Development"
         subTitle="Skilled mobile app developer specializing in Kotlin and SQLite DB for seamless and dynamic user experiences."
       />
       <ServicesCard
-        icons={<SiAntdesign />}
+        icons={<FaAppStoreIos />}
         title="Mobile App Design"
         subTitle="Proficient mobile app designer skilled in Figma, creating visually compelling and user-friendly digital experiences."
       />
       <ServicesCard
-        icons={<AiTwotoneAppstore />}
+        icons={<BiCodeAlt />}
         title="Machine Learning"
         subTitle="Experienced in machine learning, leveraging data to build intelligent, predictive models for diverse applications."
       />
       <ServicesCard
-        icons={<FaAppStoreIos />}
-        title="Software Engineer"
-        subTitle="Versatile software engineer adept in multiple engineering practices, delivering robust and efficient software solutions."
+        icons={<SiAntdesign />}
+        title="Business Intelligence"
+        subTitle="Provide good and analyzable analytics and visuals to make a factful decision with PowerBI and Tableau."
       />
     </div>
   );
