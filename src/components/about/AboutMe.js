@@ -8,7 +8,7 @@ const AboutMe = () => {
           <h2 className="font-semibold mb-1">Hello! I'm Syed Areeb</h2>
           <p className="text-base leading-6 ">
             Software Engineer from Sukkur, Pakistan. I have rich experience in web
-            and mobile application designing and building, also I am good at machine learning. I love to
+            and mobile application designing and building. Also I am good at machine learning and Business Intelligence. I love to
             talk with you about our unique.
           </p>
         </div>
