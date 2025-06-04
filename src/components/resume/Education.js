@@ -37,7 +37,7 @@ const Education = () => {
           badge="2021 - 2025"
           title="Software Engineering"
           subTitle="Sukkur IBA University"
-          des="Graduating in Software Engineering from AACSB-Accredited Sukkur IBA University. Securing 3.16 CGPA."
+          des="Bachelors in Software Engineering from AACSB-Accredited & W-Category (CS Dep.) Sukkur IBA University. Securing 3.22 CGPA."
         />
         <ResumeCard
           badge="2018 - 2021"
