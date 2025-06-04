@@ -9,7 +9,8 @@ import ResumeTitle from "./ResumeTitle";
 const Skills = () => {
   return (
     <div className="w-full grid grid-cols-9 gap-10 lgl:gap-0 px-6">
-      {/* =============== Design and Languages Start here =================== */}
+      {/* =============== Design  Start here =================== */}
+      
       <div className="col-span-9 md:col-span-4">
         <ResumeTitle title="Design" icon={<SiArtstation />} />
         <div className="py-4">
@@ -55,6 +56,10 @@ const Skills = () => {
       <div className="w-full h-full hidden lgl:flex justify-center items-center">
         <span className="w-[1px] h-full bg-zinc-800 inline-flex"></span>
       </div>
+      
+      {/* =============== Design End here ==================== */}
+      {/* =============== Language Start here ==================== */}
+
       <div className="col-span-9 md:col-span-4">
         <ResumeTitle title="Languages" icon={<FaFlag />} />
         {/* English */}
@@ -74,9 +79,9 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      {/* =============== Design and Languages End here ===================== */}
-      {/* =============== Coading and Knowledge Start here ==================== */}
-      {/* =============== Coading and Knowledge End here ==================== */}
+
+      {/* =============== Languages End here ===================== */}
+      {/* =============== Coading Start here ==================== */}
 
       <div className="col-span-9 md:col-span-4">
         <ResumeTitle title="Coding" icon={<BiCodeAlt />} />
@@ -135,45 +140,79 @@ const Skills = () => {
       <div className="w-full h-full hidden lgl:flex justify-center items-center">
         <span className="w-[1px] h-full bg-zinc-800 inline-flex"></span>
       </div>
+
+      
+      {/* =============== Coading End here ==================== */}
+      {/* =============== Knowledge Start here ==================== */}
+
       <div className="col-span-9 md:col-span-4">
         <ResumeTitle title="Knowledge" icon={<IoIosPaper />} />
-        {/* English */}
         <ul className="py-4 flex flex-col gap-2 border-b-[1px] border-b-zinc-800">
           <li className="flex items-center gap-4 text-textColor">
             <span className="text-designColor text-lg">
               <GiCheckMark />
             </span>
-            Website Deployment
+            MERN Stack
           </li>
           <li className="flex items-center gap-4 text-textColor">
             <span className="text-designColor text-lg">
               <GiCheckMark />
             </span>
-            JEST/RTL Testing
+            MySQL
           </li>
           <li className="flex items-center gap-4 text-textColor">
             <span className="text-designColor text-lg">
               <GiCheckMark />
             </span>
-            Responsiveness
+            Bootstrap, AntDesign
           </li>
           <li className="flex items-center gap-4 text-textColor">
             <span className="text-designColor text-lg">
               <GiCheckMark />
             </span>
-            Create Logo Design
+            Figma
           </li>
           <li className="flex items-center gap-4 text-textColor">
             <span className="text-designColor text-lg">
               <GiCheckMark />
             </span>
-            UI Designing With Figma
+            Notion
           </li>
           <li className="flex items-center gap-4 text-textColor">
             <span className="text-designColor text-lg">
               <GiCheckMark />
             </span>
-            Modern And Mobile-Ready
+            Git, Github
+          </li>
+          <li className="flex items-center gap-4 text-textColor">
+            <span className="text-designColor text-lg">
+              <GiCheckMark />
+            </span>
+            Vercel
+          </li>
+          <li className="flex items-center gap-4 text-textColor">
+            <span className="text-designColor text-lg">
+              <GiCheckMark />
+            </span>
+            Jest/RTL
+          </li>
+          <li className="flex items-center gap-4 text-textColor">
+            <span className="text-designColor text-lg">
+              <GiCheckMark />
+            </span>
+            JUnit
+          </li>
+          <li className="flex items-center gap-4 text-textColor">
+            <span className="text-designColor text-lg">
+              <GiCheckMark />
+            </span>
+            Postman
+          </li>
+          <li className="flex items-center gap-4 text-textColor">
+            <span className="text-designColor text-lg">
+              <GiCheckMark />
+            </span>
+            Selenium
           </li>
           <li className="flex items-center gap-4 text-textColor">
             <span className="text-designColor text-lg">
@@ -185,35 +224,42 @@ const Skills = () => {
             <span className="text-designColor text-lg">
               <GiCheckMark />
             </span>
-            Graphics And Animations
+            NPM
           </li>
           <li className="flex items-center gap-4 text-textColor">
             <span className="text-designColor text-lg">
               <GiCheckMark />
             </span>
-            Express
+            Mobile App Dev (Kotlin, SQLite DB)
           </li>
           <li className="flex items-center gap-4 text-textColor">
             <span className="text-designColor text-lg">
               <GiCheckMark />
             </span>
-            Git And Github
+            RESTful APIs
           </li>
           <li className="flex items-center gap-4 text-textColor">
             <span className="text-designColor text-lg">
               <GiCheckMark />
             </span>
-            Software Engineering Practices
+            Machine Learning
           </li>
           <li className="flex items-center gap-4 text-textColor">
             <span className="text-designColor text-lg">
               <GiCheckMark />
             </span>
-            Ant Design And Bootstrap Frameworks
+            PowerBI, Tableau
+          </li>
+          <li className="flex items-center gap-4 text-textColor">
+            <span className="text-designColor text-lg">
+              <GiCheckMark />
+            </span>
+            Networking (Cisco Packet Tracer)
           </li>
         </ul>
       </div>
-      {/* =============== Design and Languages End here ===================== */}
+      
+      {/* =============== Knowledge End here ==================== */}
     </div>
   );
 };
