@@ -7,6 +7,7 @@ import {
   workImgFive,
   workImgSix,
 } from "../../assets";
+import workImgSeven from "../../assets/work/workImgSeven.jpg";
 import Title from "../home/Title";
 import ProjectsCard from "./ProjectsCard";
 
@@ -42,6 +43,13 @@ const Projects = () => {
               title="LIBAAS"
               category="E-Commerce Website"
               image={workImgFour}
+            />
+          </a>
+          <a href="https://tumor-track.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <ProjectsCard
+              title="Tumor-Track"
+              category="Automated Web App"
+              image={workImgSeven}
             />
           </a>
           <a href="https://currencyconverter-new.vercel.app/" target="_blank" rel="noopener noreferrer">
