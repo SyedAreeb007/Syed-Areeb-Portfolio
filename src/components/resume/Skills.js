@@ -12,7 +12,7 @@ const Skills = () => {
       {/* =============== Design  Start here =================== */}
       
       <div className="col-span-9 md:col-span-4">
-        <ResumeTitle title="Design" icon={<SiArtstation />} />
+        <ResumeTitle title="Design and Development" icon={<SiArtstation />} />
         <div className="py-4">
           {/* Web Development */}
           <div className="py-3 border-b-[1px] border-zinc-800">
@@ -265,3 +265,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
