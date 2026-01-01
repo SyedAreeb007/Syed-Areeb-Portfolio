@@ -17,7 +17,7 @@ const AboutMe = () => {
         <ul className="flex flex-col gap-1">
           <li className="aboutRightLi">
             <span className="aboutRightLiSpan">Age:</span>
-            23
+            24
           </li>
           <li className="aboutRightLi">
             <span className="aboutRightLiSpan">Residence:</span>
@@ -38,3 +38,4 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
