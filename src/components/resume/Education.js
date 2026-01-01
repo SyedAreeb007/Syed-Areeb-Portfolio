@@ -10,6 +10,12 @@ const Education = () => {
       <div className="col-span-9 md:col-span-4">
         <ResumeTitle title="Experience" icon={<MdWork />} />
         <ResumeCard
+          badge="Dec 2025 - Present"
+          title="Jr. Data Analyst"
+          subTitle="Aror University of Art, Architecture, Design, and Heritage, Sukkur (Pakistan)"
+          des="Working in Quality Enhancement Cell (QEC) Department."
+        />
+        <ResumeCard
           badge="2 Months"
           title="Web Developer"
           subTitle="RailFood (Pakistan)"
@@ -37,7 +43,7 @@ const Education = () => {
           badge="2021 - 2025"
           title="Software Engineering"
           subTitle="Sukkur IBA University"
-          des="Bachelors in Software Engineering from AACSB-Accredited & W-Category (CS Dep.) Sukkur IBA University. Securing 3.22 CGPA."
+          des="Bachelors in Software Engineering from AACSB-Accredited & W-Category (CS Dep.) Sukkur IBA University. Securing 3.29 CGPA."
         />
         <ResumeCard
           badge="2018 - 2021"
@@ -57,3 +63,4 @@ const Education = () => {
 };
 
 export default Education;
+
